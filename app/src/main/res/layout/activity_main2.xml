@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue"></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purple"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_blue"
+        android:layout_alignParentBottom="true"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_blue_r"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_purple"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        ></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/passd"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:width="300dp"
+        android:background="@drawable/round_edit"
+        android:gravity="center_vertical"
+        android:hint="Email address"
+        android:inputType="text"
+        android:longClickable="false"
+        android:maxLength="20"
+        android:paddingLeft="20dp">
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/passd"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:width="300dp"
+        android:background="@drawable/round_edit"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword|number"
+        android:longClickable="false"
+        android:paddingLeft="20dp"></EditText>
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:longClickable="false"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+        <requestFocus></requestFocus>
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/frgtpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Forgot Password?"
+        android:textStyle="bold"
+        android:textColor="#8D9093"
+        android:textSize="10sp"
+        />
+
+
+    <TextView
+        android:id="@+id/regster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frgtpswd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Register Here"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

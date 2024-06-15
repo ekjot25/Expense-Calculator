@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite">
+
+
+    <ImageView
+        android:id="@+id/ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/icn1"></ImageView>
+
+
+    <TextView
+        android:id="@+id/bg_lablel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Budget"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/bg_mnth"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bg_lablel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"></ImageView>-->
+
+        <TextView
+            android:id="@+id/budget_mnth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="OCTOBER 2022"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"></ImageView>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bg_bgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_mnth"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bd_dollar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/d_bag"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/budget_name"
+            android:layout_toLeftOf="@+id/bg_arro"
+            android:layout_toRightOf="@+id/bd_dollar"
+            android:hint="Budget Name" />
+
+
+        <ImageView
+            android:id="@+id/bg_arro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_chevron_right_24_b">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_bgt"
+        android:layout_marginTop="0dp"
+        android:id="@+id/bg_bgt1"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bd_dollar1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_monetization_on_24"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bg_arro1"
+            android:layout_toRightOf="@+id/bd_dollar1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/budget_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Amount" />
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bg_arro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_chevron_right_24_b">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_bgt1"
+        android:layout_marginTop="0dp"
+        android:id="@+id/bg_bgt2"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bd_dollar2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bg_arro2"
+            android:layout_toRightOf="@+id/bd_dollar2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/bg_start_Date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/budget_Date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Today"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bg_arro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_chevron_right_24_b">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_bgt2"
+        android:layout_marginTop="0dp"
+        android:id="@+id/bg_bgt3"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bd_dollar3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_calendar_today_24"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bg_arro3"
+            android:layout_toRightOf="@+id/bd_dollar3"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/Reccurence"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Reccurence"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/spinner2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Monthly"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+             />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bg_arro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_chevron_right_24_b">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:width="300dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:longClickable="false"
+        android:text="Create A New Budget"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+        <requestFocus></requestFocus>
+    </TextView>
+
+
+</RelativeLayout>
